@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+	<h1>Welcome, {{ user.username }} to geeknet iNTUsurvey</h1>
+	
+	<!--<p>Name: {{ createaccount.name }}</p>-->	
+	<p>Username: {{ user.username }}</p>
+	<p>Email: {{ user.email }}</p>
+	<!--<p>Birthday: {{ createaccount.birthday }}</p>-->
+    <!--<p><a href="/editprofile/">Edit Profile</a></p>-->
+    <p><a href="/">Survey Example Page</a></p>
+{% endblock %}

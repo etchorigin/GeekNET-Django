@@ -1,0 +1,17 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" >
+	{% block extrahead %}{% endblock %}
+</head>
+<body>
+
+<div id="pageContainer">
+	<div id="nav_top_right" style="float: right ;">
+		{% if user.is_authenticated %}<p><a href="/accounts/logout/">Logout</a></p>{% else %}<p><a href="/accounts/login/">Login / Signup</a></p>{% endif %}
+        <p><a href="/admin/">Control Panel</a></p>
+    </div>
+	{% block content %}
+	{% endblock %}
+</div>
+</body>
+</html>
